@@ -36,3 +36,34 @@ let job1 = "programmer";
 let job2 = "teacher";
 
 console.log(myFirstJob);
+
+/**
+ * 7 Primitive Data Types
+ * Number: Floating point numbers...used for decimals and integers
+ * String: Sequence of characters...used for text
+ * Boolean: Logical type that can only be true or false...used for taking decisions
+ * Undefined: value that is taken for a variable that in not yet defined('empty value')
+ * Null: Also means 'empty value'
+ * Symbol(ES2015): Value that is unique and cannot be changed
+ * BigInt(ES2020): Larger integers than the number can hold
+ * NB 
+ * Dynamic Typing...variables datatype are assigned automatically depending with the value they are holding
+ */
+
+// Boolean
+let javaScriptIsFun = true;
+console.log(javaScriptIsFun);
+
+//Typeof used to reveal datatype
+console.log(typeof javaScriptIsFun);
+console.log(typeof 23);
+console.log(typeof 'BrianOtieno12');
+
+//Dynamic Typing by reassigning a value to javaScriptIsFun variable
+javaScriptIsFun = 'YES';
+console.log(typeof javaScriptIsFun);
+
+//undefined
+let year;
+console.log(year);
+console.log(typeof year);
