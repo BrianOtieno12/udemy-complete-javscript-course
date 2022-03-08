@@ -68,18 +68,58 @@
 // console.log(year);
 // console.log(typeof year);
 
-// let keyword is used in declaring variables which can be re-assigned(mutated) ex
-let age = 30;
-age = 31; //reassigning(mutating)
-let age; //success
+// // let keyword is used in declaring variables which can be re-assigned(mutated) ex
+// let age = 30;
+// age = 31; //reassigning(mutating)
+// let age; //success
 
-//const keyword is used to declare immutable variables ie variables that don't change ex
-const birthYear = 1991;
-birthYear = 1995; //error
+// //const keyword is used to declare immutable variables ie variables that don't change ex
+// const birthYear = 1991;
+// birthYear = 1995; //error
 
-const birthYear; //error const variables must be initialized on creation
+// const birthYear; //error const variables must be initialized on creation
 
-//var same as let 
-var birthYear = 1991;
-birthYear = 1995;
-var birthYear; //success
+// //var same as let
+// var birthYear = 1991;
+// birthYear = 1995;
+// var birthYear; //success
+
+/**
+ * Mathematical Operations
+ */
+//minus, multiplication, division, power and addition
+const now = 2037;
+const ageBrian = now - 1991;
+const ageSarah = now - 2018;
+console.log(ageBrian, ageSarah);
+
+console.log(ageBrian * 2, ageBrian / 10, 2 ** 3);
+//2**3 means 2 to the power of 3 = 2*2*2*2
+
+const firstName = 'Brian';
+const lastName = 'Otieno12';
+console.log(firstName + ' ' + lastName);
+
+//typeof operator used above
+
+//assigment operator(=)
+let x = 10 + 5;
+console.log(x);
+
+x += 10; //x = x + 10;
+console.log(x);
+
+x *= 4;//x = x * 4
+console.log(x);
+
+x++;
+console.log(x);
+
+x--;
+console.log(x);
+
+//comparison operators (>, <, >=, <=)
+console.log(ageBrian > ageSarah);
+console.log(ageSarah >= 18);
+
+console.log(now - 1991 > now - 2018);
