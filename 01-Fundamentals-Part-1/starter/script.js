@@ -129,18 +129,43 @@
  * Url: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
  */
 
-// coding challenge
-const massMark = 78;
-const heightMark = 1.69;
+// // coding challenge
+// const massMark = 78;
+// const heightMark = 1.69;
 
-const massJohn = 92;
-const heightJohn = 1.95;
+// const massJohn = 92;
+// const heightJohn = 1.95;
 
-const bmiMark = massMark / heightMark ** 2;
-const bmiJohn = massJohn / (heightJohn * heightJohn);
+// const bmiMark = massMark / heightMark ** 2;
+// const bmiJohn = massJohn / (heightJohn * heightJohn);
 
-const higherBmi = bmiMark > bmiJohn ? 'bmiMark' : 'bmiJohn';
+// const higherBmi = bmiMark > bmiJohn ? 'bmiMark' : 'bmiJohn';
 
-console.log(bmiMark);
-console.log(bmiJohn);
-console.log(higherBmi);
+// console.log(bmiMark);
+// console.log(bmiJohn);
+// console.log(higherBmi);
+
+/**
+ * Template literals and strings
+ */
+
+const firstName = 'Brian';
+const job = 'programmer';
+const birthyear = 1996;
+const year = 2037;
+
+//normal
+const Brian = "I'am " + firstName + ', a ' + (year - birthyear) + ' years old ' + job + '!';
+console.log(Brian);
+
+//using template literal es6
+const brianNew = `I'am ${firstName} a ${year - birthyear} years old ${job} !`;
+console.log(brianNew);
+
+//normal newline sentences
+console.log('String with \n\ multiple \n\ lines');
+
+//newline using template literals es6
+console.log(`String
+with
+newlines`);
