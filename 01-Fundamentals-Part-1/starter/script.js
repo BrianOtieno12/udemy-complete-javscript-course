@@ -84,42 +84,63 @@
 // birthYear = 1995;
 // var birthYear; //success
 
+// /**
+//  * Mathematical Operations
+//  */
+// //minus, multiplication, division, power and addition
+// const now = 2037;
+// const ageBrian = now - 1991;
+// const ageSarah = now - 2018;
+// console.log(ageBrian, ageSarah);
+
+// console.log(ageBrian * 2, ageBrian / 10, 2 ** 3);
+// //2**3 means 2 to the power of 3 = 2*2*2*2
+
+// const firstName = 'Brian';
+// const lastName = 'Otieno12';
+// console.log(firstName + ' ' + lastName);
+
+// //typeof operator used above
+
+// //assigment operator(=)
+// let x = 10 + 5;
+// console.log(x);
+
+// x += 10; //x = x + 10;
+// console.log(x);
+
+// x *= 4;//x = x * 4
+// console.log(x);
+
+// x++;
+// console.log(x);
+
+// x--;
+// console.log(x);
+
+// //comparison operators (>, <, >=, <=)
+// console.log(ageBrian > ageSarah);
+// console.log(ageSarah >= 18);
+
+// console.log(now - 1991 > now - 2018);
+
 /**
- * Mathematical Operations
+ * Operator Precedence
+ * Url: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
  */
-//minus, multiplication, division, power and addition
-const now = 2037;
-const ageBrian = now - 1991;
-const ageSarah = now - 2018;
-console.log(ageBrian, ageSarah);
 
-console.log(ageBrian * 2, ageBrian / 10, 2 ** 3);
-//2**3 means 2 to the power of 3 = 2*2*2*2
+// coding challenge
+const massMark = 78;
+const heightMark = 1.69;
 
-const firstName = 'Brian';
-const lastName = 'Otieno12';
-console.log(firstName + ' ' + lastName);
+const massJohn = 92;
+const heightJohn = 1.95;
 
-//typeof operator used above
+const bmiMark = massMark / heightMark ** 2;
+const bmiJohn = massJohn / (heightJohn * heightJohn);
 
-//assigment operator(=)
-let x = 10 + 5;
-console.log(x);
+const higherBmi = bmiMark > bmiJohn ? 'bmiMark' : 'bmiJohn';
 
-x += 10; //x = x + 10;
-console.log(x);
-
-x *= 4;//x = x * 4
-console.log(x);
-
-x++;
-console.log(x);
-
-x--;
-console.log(x);
-
-//comparison operators (>, <, >=, <=)
-console.log(ageBrian > ageSarah);
-console.log(ageSarah >= 18);
-
-console.log(now - 1991 > now - 2018);
+console.log(bmiMark);
+console.log(bmiJohn);
+console.log(higherBmi);
