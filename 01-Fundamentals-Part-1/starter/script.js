@@ -145,27 +145,59 @@
 // console.log(bmiJohn);
 // console.log(higherBmi);
 
+// /**
+//  * Template literals and strings
+//  */
+
+// const firstName = 'Brian';
+// const job = 'programmer';
+// const birthyear = 1996;
+// const year = 2037;
+
+// //normal
+// const Brian = "I'am " + firstName + ', a ' + (year - birthyear) + ' years old ' + job + '!';
+// console.log(Brian);
+
+// //using template literal es6
+// const brianNew = `I'am ${firstName} a ${year - birthyear} years old ${job} !`;
+// console.log(brianNew);
+
+// //normal newline sentences
+// console.log('String with \n\ multiple \n\ lines');
+
+// //newline using template literals es6
+// console.log(`String
+// with
+// newlines`);
+
 /**
- * Template literals and strings
+ * Decision making: if else statements known as control structures
+ * windows + period sign to reveal emoji
  */
 
-const firstName = 'Brian';
-const job = 'programmer';
-const birthyear = 1996;
-const year = 2037;
+const age = 15;
 
-//normal
-const Brian = "I'am " + firstName + ', a ' + (year - birthyear) + ' years old ' + job + '!';
-console.log(Brian);
+//if block
+if (age >= 18) {
+    console.log('Sarah can start driving license 🚗');
+}
 
-//using template literal es6
-const brianNew = `I'am ${firstName} a ${year - birthyear} years old ${job} !`;
-console.log(brianNew);
+//if..else block
+if (age >= 18) {
+    console.log('Sarah can start driving license 🚗');
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`Sarah is too young. wait another ${yearsLeft} years 😪`);
+}
 
-//normal newline sentences
-console.log('String with \n\ multiple \n\ lines');
+//example
+const birthYear = 2012;
+let century;
 
-//newline using template literals es6
-console.log(`String
-with
-newlines`);
+if (birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+
+console.log(century);
