@@ -175,29 +175,65 @@
  * windows + period sign to reveal emoji
  */
 
-const age = 15;
+// const age = 15;
 
-//if block
-if (age >= 18) {
-    console.log('Sarah can start driving license 🚗');
-}
+// //if block
+// if (age >= 18) {
+//     console.log('Sarah can start driving license 🚗');
+// }
 
-//if..else block
-if (age >= 18) {
-    console.log('Sarah can start driving license 🚗');
-} else {
-    const yearsLeft = 18 - age;
-    console.log(`Sarah is too young. wait another ${yearsLeft} years 😪`);
-}
+// //if..else block
+// if (age >= 18) {
+//     console.log('Sarah can start driving license 🚗');
+// } else {
+//     const yearsLeft = 18 - age;
+//     console.log(`Sarah is too young. wait another ${yearsLeft} years 😪`);
+// }
 
-//example
-const birthYear = 2012;
-let century;
+// //example
+// const birthYear = 2012;
+// let century;
 
-if (birthYear <= 2000) {
-    century = 20;
-} else {
-    century = 21;
-}
+// if (birthYear <= 2000) {
+//     century = 20;
+// } else {
+//     century = 21;
+// }
 
-console.log(century);
+// console.log(century);
+
+/**
+ * Type Conversion = converting value type manually;]
+ */
+
+const inputYear = '1991';
+//convert string inputYear to a number and compare with string inputYear
+console.log(Number(inputYear), inputYear);
+//adding string inputYear with int 18 leads to concatenation
+console.log(inputYear + 18);
+//manually convertring string inputYear to number then adding it to int 18 passes
+console.log(Number(inputYear) + 18);
+
+//Converting a string literal to a number results to Nan(not a number);
+console.log(Number('Brian'));
+//Nan is a number but invalid
+console.log(typeof Nan);
+
+console.log(String(23), 23);
+
+/**
+ * Type Coercion: converting value types automatically by javascript
+ * + sign concatenates a string
+ */
+console.log('I am ' + 23 + ' years old');
+console.log('23' - 10 - 3);
+console.log('23' + '10' + 3);
+console.log('23' / 2);
+
+let n = '1' + 1;
+n = n - 1;
+console.log(n);
+
+console.log(2 + 3 + 4 + '5');
+
+console.log('10' - '4' - '3' - 2 + '5');
