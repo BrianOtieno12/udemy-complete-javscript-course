@@ -202,38 +202,68 @@
 
 // console.log(century);
 
+// /**
+//  * Type Conversion = converting value type manually;]
+//  */
+
+// const inputYear = '1991';
+// //convert string inputYear to a number and compare with string inputYear
+// console.log(Number(inputYear), inputYear);
+// //adding string inputYear with int 18 leads to concatenation
+// console.log(inputYear + 18);
+// //manually convertring string inputYear to number then adding it to int 18 passes
+// console.log(Number(inputYear) + 18);
+
+// //Converting a string literal to a number results to Nan(not a number);
+// console.log(Number('Brian'));
+// //Nan is a number but invalid
+// console.log(typeof Nan);
+
+// console.log(String(23), 23);
+
+// /**
+//  * Type Coercion: converting value types automatically by javascript
+//  * + sign concatenates a string
+//  */
+// console.log('I am ' + 23 + ' years old');
+// console.log('23' - 10 - 3);
+// console.log('23' + '10' + 3);
+// console.log('23' / 2);
+
+// let n = '1' + 1;
+// n = n - 1;
+// console.log(n);
+
+// console.log(2 + 3 + 4 + '5');
+
+// console.log('10' - '4' - '3' - 2 + '5');
+
 /**
- * Type Conversion = converting value type manually;]
+ * Falsy and truthful values
+ * falsy values are 5: 0, '', undefined, null, Nan
+ * truthful values are those which are not falsy values
  */
 
-const inputYear = '1991';
-//convert string inputYear to a number and compare with string inputYear
-console.log(Number(inputYear), inputYear);
-//adding string inputYear with int 18 leads to concatenation
-console.log(inputYear + 18);
-//manually convertring string inputYear to number then adding it to int 18 passes
-console.log(Number(inputYear) + 18);
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Jonas'));
+console.log(Boolean({}));
+console.log(Boolean(''));
 
-//Converting a string literal to a number results to Nan(not a number);
-console.log(Number('Brian'));
-//Nan is a number but invalid
-console.log(typeof Nan);
+const money = 0;
+if (money) {
+    console.log("Don't spend it all");
+} else {
+    console.log('You should get a job');
+}
 
-console.log(String(23), 23);
+//NB money is type coerced into  a boolean by Javascript which returns a false since 0 is a falsy value
 
-/**
- * Type Coercion: converting value types automatically by javascript
- * + sign concatenates a string
- */
-console.log('I am ' + 23 + ' years old');
-console.log('23' - 10 - 3);
-console.log('23' + '10' + 3);
-console.log('23' / 2);
+let height;
+if (height) {
+    console.log('YAY! Height is defined');
+} else {
+    console.log('Height is UNDEFINED');
+}
 
-let n = '1' + 1;
-n = n - 1;
-console.log(n);
-
-console.log(2 + 3 + 4 + '5');
-
-console.log('10' - '4' - '3' - 2 + '5');
+//NB height is typed coerced into a bollean by javascript which returns a  false since undefined is a falsy value
