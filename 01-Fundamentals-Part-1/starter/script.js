@@ -238,32 +238,40 @@
 
 // console.log('10' - '4' - '3' - 2 + '5');
 
+// /**
+//  * Falsy and truthful values
+//  * falsy values are 5: 0, '', undefined, null, Nan
+//  * truthful values are those which are not falsy values
+//  */
+
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean('Jonas'));
+// console.log(Boolean({}));
+// console.log(Boolean(''));
+
+// const money = 0;
+// if (money) {
+//     console.log("Don't spend it all");
+// } else {
+//     console.log('You should get a job');
+// }
+
+// //NB money is type coerced into  a boolean by Javascript which returns a false since 0 is a falsy value
+
+// let height;
+// if (height) {
+//     console.log('YAY! Height is defined');
+// } else {
+//     console.log('Height is UNDEFINED');
+// }
+
+// //NB height is typed coerced into a bollean by javascript which returns a  false since undefined is a falsy value
+
 /**
- * Falsy and truthful values
- * falsy values are 5: 0, '', undefined, null, Nan
- * truthful values are those which are not falsy values
+ * Boolean Logic
  */
 
-console.log(Boolean(0));
-console.log(Boolean(undefined));
-console.log(Boolean('Jonas'));
-console.log(Boolean({}));
-console.log(Boolean(''));
-
-const money = 0;
-if (money) {
-    console.log("Don't spend it all");
-} else {
-    console.log('You should get a job');
-}
-
-//NB money is type coerced into  a boolean by Javascript which returns a false since 0 is a falsy value
-
-let height;
-if (height) {
-    console.log('YAY! Height is defined');
-} else {
-    console.log('Height is UNDEFINED');
-}
-
-//NB height is typed coerced into a bollean by javascript which returns a  false since undefined is a falsy value
+1) And Operator = true only if A and B are true
+2) OR operator = false only if A and B are false
+3) Not operator(!) = negates a true or false value
