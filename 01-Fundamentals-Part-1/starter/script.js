@@ -276,28 +276,57 @@
 // 2) OR operator = false only if A and B are false
 // 3) Not operator(!) = negates a true or false value
 
+// /**
+//  * Logic operators
+//  */
+// const hasDriverLicence = true;
+// const hasGoodVision = true;
+
+// console.log(hasDriverLicence && hasGoodVision);
+// console.log(hasDriverLicence || hasGoodVision);
+// console.log(hasDriverLicence);
+
+// if (hasDriverLicence && hasGoodVision) {
+//     console.log("Sarah is able to drive");
+// } else {
+//     console.log("Someone else should drive");
+// }
+
+// const isTired = false;
+
+// console.log(hasDriverLicence && hasGoodVision && !isTired);
+
+// if (hasDriverLicence && hasGoodVision && !isTired) {
+//     console.log("Sarah is able to drive");
+// } else {
+//     console.log("Someone else should drive");
+// }
+
 /**
- * Logic operators
+ * Switch statements
  */
-const hasDriverLicence = true;
-const hasGoodVision = true;
 
-console.log(hasDriverLicence && hasGoodVision);
-console.log(hasDriverLicence || hasGoodVision);
-console.log(hasDriverLicence);
+const day = 'sundayz';
 
-if (hasDriverLicence && hasGoodVision) {
-    console.log("Sarah is able to drive");
-} else {
-    console.log("Someone else should drive");
-}
-
-const isTired = false;
-
-console.log(hasDriverLicence && hasGoodVision && !isTired);
-
-if (hasDriverLicence && hasGoodVision && !isTired) {
-    console.log("Sarah is able to drive");
-} else {
-    console.log("Someone else should drive");
+switch (day) {
+    case 'monday':
+        console.log('Plan course structure');
+        break;
+    case 'tuesday':
+        console.log('Prepare theory videos');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('Write code examples');
+        break;
+    case 'friday':
+        console.log('Record videos');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('Enjoy the weekend');
+        break;
+    default:
+        console.log('Not a valid day');
+        break;
 }
