@@ -268,10 +268,36 @@
 
 // //NB height is typed coerced into a bollean by javascript which returns a  false since undefined is a falsy value
 
-/**
- * Boolean Logic
- */
+// /**
+//  * Boolean Logic
+//  */
 
-1) And Operator = true only if A and B are true
-2) OR operator = false only if A and B are false
-3) Not operator(!) = negates a true or false value
+// 1) And Operator = true only if A and B are true
+// 2) OR operator = false only if A and B are false
+// 3) Not operator(!) = negates a true or false value
+
+/**
+ * Logic operators
+ */
+const hasDriverLicence = true;
+const hasGoodVision = true;
+
+console.log(hasDriverLicence && hasGoodVision);
+console.log(hasDriverLicence || hasGoodVision);
+console.log(hasDriverLicence);
+
+if (hasDriverLicence && hasGoodVision) {
+    console.log("Sarah is able to drive");
+} else {
+    console.log("Someone else should drive");
+}
+
+const isTired = false;
+
+console.log(hasDriverLicence && hasGoodVision && !isTired);
+
+if (hasDriverLicence && hasGoodVision && !isTired) {
+    console.log("Sarah is able to drive");
+} else {
+    console.log("Someone else should drive");
+}
