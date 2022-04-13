@@ -302,31 +302,55 @@
 //     console.log("Someone else should drive");
 // }
 
+// /**
+//  * Switch statements
+//  */
+
+// const day = 'sundayz';
+
+// switch (day) {
+//     case 'monday':
+//         console.log('Plan course structure');
+//         break;
+//     case 'tuesday':
+//         console.log('Prepare theory videos');
+//         break;
+//     case 'wednesday':
+//     case 'thursday':
+//         console.log('Write code examples');
+//         break;
+//     case 'friday':
+//         console.log('Record videos');
+//         break;
+//     case 'saturday':
+//     case 'sunday':
+//         console.log('Enjoy the weekend');
+//         break;
+//     default:
+//         console.log('Not a valid day');
+//         break;
+// }
+
 /**
- * Switch statements
+ * Equality Operators
+ * There are two types:
+ * 1) loose equality operator(==, !=)
+ * 2) Strict equality opearator(===, !==)
  */
+const age = 18;
 
-const day = 'sundayz';
+if (age == '18') {
+    console.log('You are of age (loose)'); // will be printed since loose equality operaator performs typecoercion
+}
 
-switch (day) {
-    case 'monday':
-        console.log('Plan course structure');
-        break;
-    case 'tuesday':
-        console.log('Prepare theory videos');
-        break;
-    case 'wednesday':
-    case 'thursday':
-        console.log('Write code examples');
-        break;
-    case 'friday':
-        console.log('Record videos');
-        break;
-    case 'saturday':
-    case 'sunday':
-        console.log('Enjoy the weekend');
-        break;
-    default:
-        console.log('Not a valid day');
-        break;
+if (age === '18') {
+    console.log('you are of age (strict)')// won't be printed since strict equality operator does not perform type coercion
+}
+
+if (age === 18) {
+    console.log('you are of age (strict 2)'); //will be printed
+}
+
+if (age === Number('18')) {
+    console.log('You are of age (strict 3)'); // will be printed since we have converted string 18 into an integer
 }
