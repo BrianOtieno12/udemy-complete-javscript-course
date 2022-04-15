@@ -356,16 +356,30 @@
 // }
 
 
+// /**
+//  * Expressions vs statements
+//  * Expresiions = produce a value
+//  * statements = do not produce a value but are comprised of expresiions see below if statement example
+//  * 23 > 1 => is an expresion since it produces a boolean value
+//  * ${me} => me is an expression because it produces a value
+//  */
+
+// const me = 'BrianOtieno12';
+
+// if (23 > 1) {
+//     console.log(`My name is ${me} yeah!`)
+// }
+
 /**
- * Expressions vs statements
- * Expresiions = produce a value
- * statements = do not produce a value but are comprised of expresiions see below if statement example
- * 23 > 1 => is an expresion since it produces a boolean value
- * ${me} => me is an expression because it produces a value
+ * Conditional (ternary) operator
+ * contains 3 sections :
+ * section one => condition
+ * section two => if statement
+ * sectione three => else statement
  */
 
-const me = 'BrianOtieno12';
+const age = 23;
+age > 18 ? console.log('drink wine 🍷') : console.log('drink water 💧'); //ternary operator
 
-if (23 > 1) {
-    console.log(`My name is ${me} yeah!`)
-}
+//Take note operators produces a value thus can be used with a string literal
+console.log(`I like to drink ${age > 18 ? 'wine 🍷' : 'water 💧'}`);
