@@ -331,26 +331,41 @@
 //         break;
 // }
 
+// /**
+//  * Equality Operators
+//  * There are two types:
+//  * 1) loose equality operator(==, !=)
+//  * 2) Strict equality opearator(===, !==)
+//  */
+// const age = 18;
+
+// if (age == '18') {
+//     console.log('You are of age (loose)'); // will be printed since loose equality operaator performs typecoercion
+// }
+
+// if (age === '18') {
+//     console.log('you are of age (strict)')// won't be printed since strict equality operator does not perform type coercion
+// }
+
+// if (age === 18) {
+//     console.log('you are of age (strict 2)'); //will be printed
+// }
+
+// if (age === Number('18')) {
+//     console.log('You are of age (strict 3)'); // will be printed since we have converted string 18 into an integer
+// }
+
+
 /**
- * Equality Operators
- * There are two types:
- * 1) loose equality operator(==, !=)
- * 2) Strict equality opearator(===, !==)
+ * Expressions vs statements
+ * Expresiions = produce a value
+ * statements = do not produce a value but are comprised of expresiions see below if statement example
+ * 23 > 1 => is an expresion since it produces a boolean value
+ * ${me} => me is an expression because it produces a value
  */
-const age = 18;
 
-if (age == '18') {
-    console.log('You are of age (loose)'); // will be printed since loose equality operaator performs typecoercion
-}
+const me = 'BrianOtieno12';
 
-if (age === '18') {
-    console.log('you are of age (strict)')// won't be printed since strict equality operator does not perform type coercion
-}
-
-if (age === 18) {
-    console.log('you are of age (strict 2)'); //will be printed
-}
-
-if (age === Number('18')) {
-    console.log('You are of age (strict 3)'); // will be printed since we have converted string 18 into an integer
+if (23 > 1) {
+    console.log(`My name is ${me} yeah!`)
 }
