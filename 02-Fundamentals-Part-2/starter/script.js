@@ -29,3 +29,31 @@
 function logger() {
     console.log('Hello world');
 }
+
+//function call
+logger();
+logger();
+logger();
+
+/**
+ * 
+ * @param {int} apples 
+ * @param {int} oranges 
+ * @returns String
+ * function contains parameter apples and oranges
+ */
+function juiceProcessor(apples, oranges) {
+    const juice = `Juice composed of ${apples} apples and ${oranges} oranges`;
+    return juice;
+}
+
+//function call contains arguments that are passed to function juiceProcessor
+//returned vString from function juiceProcessor is assigned to order1, order2, order3...
+const order1 = juiceProcessor(5, 0);
+console.log(order1);
+
+const order2 = juiceProcessor(5, 1);
+console.log(order2);
+
+const order3 = juiceProcessor(5, 2);
+console.log(order3);
