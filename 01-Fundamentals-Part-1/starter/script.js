@@ -383,3 +383,7 @@ age > 18 ? console.log('drink wine 🍷') : console.log('drink water 💧'); //t
 
 //Take note operators produces a value thus can be used with a string literal
 console.log(`I like to drink ${age > 18 ? 'wine 🍷' : 'water 💧'}`);
+
+
+//let is used with variables that are dimmed to change their values otherwisw always default...
+//...to declaring values using const to avoid errors
