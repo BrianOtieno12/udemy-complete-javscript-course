@@ -58,26 +58,54 @@
 // const order3 = juiceProcessor(5, 2);
 // console.log(order3);
 
+// /**
+//  * function declarations and expressions
+//  * NB: in function declarations a function call can be made...
+//  * ..before we declare the function whereas in function expression...
+//  * ...it will be an error
+//  */
+
+// //function declaration
+// function calcAge1(birthYear) {
+//     return 2037 - birthYear;
+// }
+
+// const age1 = calcAge1(1991);
+// console.log(age1);
+
+// //function expression
+// const calcAge2 = function (birthYear) {
+//     return 2037 - birthYear;
+// }
+
+// const age2 = calcAge2(1992);
+// console.log(age2);
+
 /**
- * function declarations and expressions
- * NB: in function declarations a function call can be made...
- * ..before we declare the function whereas in function expression...
- * ...it will be an error
+ * Arrow functions
+ * @param (int) birthYear
  */
 
-//function declaration
-function calcAge1(birthYear) {
-    return 2037 - birthYear;
+//example  1
+const calcAge3 = birthYear => 2037 - birthYear;
+const age3 = calcAge3(1993);
+console.log(age3);
+
+//example2
+const retirementTime = birthYear => {
+    const age = 2037 - birthYear;
+    const retirementAge = 65 - age;
+    return retirementAge;
 }
 
-const age1 = calcAge1(1991);
-console.log(age1);
+const age4 = retirementTime(1995);
+console.log(age4);
 
-//function expression
-const calcAge2 = function (birthYear) {
-    return 2037 - birthYear;
+//example3
+const retirementPeriod = (birthYear, firstName) => {
+    const age = 2037 - birthYear;
+    const retirementAge = 65 - age;
+    return `${firstName} retires after ${retirementAge} years`;
 }
 
-const age2 = calcAge2(1992);
-console.log(age2);
-
+console.log(retirementPeriod(1996, 'BrianOtieno12'))
