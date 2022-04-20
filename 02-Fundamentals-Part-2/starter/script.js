@@ -22,38 +22,62 @@
  * ..called many times in the program
  */
 
+// /**
+//  * function declaration
+//  * we use key word function followed by function name plus brackets
+//  */
+// function logger() {
+//     console.log('Hello world');
+// }
+
+// //function call
+// logger();
+// logger();
+// logger();
+
+// /**
+//  *
+//  * @param {int} apples
+//  * @param {int} oranges
+//  * @returns String
+//  * function contains parameter apples and oranges
+//  */
+// function juiceProcessor(apples, oranges) {
+//     const juice = `Juice composed of ${apples} apples and ${oranges} oranges`;
+//     return juice;
+// }
+
+// //function call contains arguments that are passed to function juiceProcessor
+// //returned vString from function juiceProcessor is assigned to order1, order2, order3...
+// const order1 = juiceProcessor(5, 0);
+// console.log(order1);
+
+// const order2 = juiceProcessor(5, 1);
+// console.log(order2);
+
+// const order3 = juiceProcessor(5, 2);
+// console.log(order3);
+
 /**
- * function declaration
- * we use key word function followed by function name plus brackets
+ * function declarations and expressions
+ * NB: in function declarations a function call can be made...
+ * ..before we declare the function whereas in function expression...
+ * ...it will be an error
  */
-function logger() {
-    console.log('Hello world');
+
+//function declaration
+function calcAge1(birthYear) {
+    return 2037 - birthYear;
 }
 
-//function call
-logger();
-logger();
-logger();
+const age1 = calcAge1(1991);
+console.log(age1);
 
-/**
- * 
- * @param {int} apples 
- * @param {int} oranges 
- * @returns String
- * function contains parameter apples and oranges
- */
-function juiceProcessor(apples, oranges) {
-    const juice = `Juice composed of ${apples} apples and ${oranges} oranges`;
-    return juice;
+//function expression
+const calcAge2 = function (birthYear) {
+    return 2037 - birthYear;
 }
 
-//function call contains arguments that are passed to function juiceProcessor
-//returned vString from function juiceProcessor is assigned to order1, order2, order3...
-const order1 = juiceProcessor(5, 0);
-console.log(order1);
+const age2 = calcAge2(1992);
+console.log(age2);
 
-const order2 = juiceProcessor(5, 1);
-console.log(order2);
-
-const order3 = juiceProcessor(5, 2);
-console.log(order3);
