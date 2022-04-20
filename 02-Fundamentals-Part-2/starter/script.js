@@ -81,31 +81,48 @@
 // const age2 = calcAge2(1992);
 // console.log(age2);
 
+// /**
+//  * Arrow functions
+//  * @param (int) birthYear
+//  */
+
+// //example  1
+// const calcAge3 = birthYear => 2037 - birthYear;
+// const age3 = calcAge3(1993);
+// console.log(age3);
+
+// //example2
+// const retirementTime = birthYear => {
+//     const age = 2037 - birthYear;
+//     const retirementAge = 65 - age;
+//     return retirementAge;
+// }
+
+// const age4 = retirementTime(1995);
+// console.log(age4);
+
+// //example3
+// const retirementPeriod = (birthYear, firstName) => {
+//     const age = 2037 - birthYear;
+//     const retirementAge = 65 - age;
+//     return `${firstName} retires after ${retirementAge} years`;
+// }
+
+// console.log(retirementPeriod(1996, 'BrianOtieno12'))
+
 /**
- * Arrow functions
- * @param (int) birthYear
+ * calling function inside another function
  */
-
-//example  1
-const calcAge3 = birthYear => 2037 - birthYear;
-const age3 = calcAge3(1993);
-console.log(age3);
-
-//example2
-const retirementTime = birthYear => {
-    const age = 2037 - birthYear;
-    const retirementAge = 65 - age;
-    return retirementAge;
+const cutIntoPieces = function (fruit) {
+    return fruit * 4;
 }
 
-const age4 = retirementTime(1995);
-console.log(age4);
+const fruitProcessor = function (apples, oranges) {
 
-//example3
-const retirementPeriod = (birthYear, firstName) => {
-    const age = 2037 - birthYear;
-    const retirementAge = 65 - age;
-    return `${firstName} retires after ${retirementAge} years`;
+    const cutApples = cutIntoPieces(apples);
+    const cutOranges = cutIntoPieces(oranges);
+
+    return `Juice contains ${cutApples} pieces of apples and ${cutOranges} pieces of oranges`;
 }
 
-console.log(retirementPeriod(1996, 'BrianOtieno12'))
+console.log(fruitProcessor(2, 4));
