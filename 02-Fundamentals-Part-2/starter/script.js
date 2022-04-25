@@ -110,19 +110,50 @@
 
 // console.log(retirementPeriod(1996, 'BrianOtieno12'))
 
+// /**
+//  * calling function inside another function
+//  */
+// const cutIntoPieces = function (fruit) {
+//     return fruit * 4;
+// }
+
+// const fruitProcessor = function (apples, oranges) {
+
+//     const cutApples = cutIntoPieces(apples);
+//     const cutOranges = cutIntoPieces(oranges);
+
+//     return `Juice contains ${cutApples} pieces of apples and ${cutOranges} pieces of oranges`;
+// }
+
+// console.log(fruitProcessor(2, 4));
+
 /**
- * calling function inside another function
+ * Arrays
  */
-const cutIntoPieces = function (fruit) {
-    return fruit * 4;
-}
 
-const fruitProcessor = function (apples, oranges) {
+//array declaration
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
 
-    const cutApples = cutIntoPieces(apples);
-    const cutOranges = cutIntoPieces(oranges);
+const years = new Array(1991, 1992, 1993, 1994);
+console.log(years);
 
-    return `Juice contains ${cutApples} pieces of apples and ${cutOranges} pieces of oranges`;
-}
+//fetch first element
+console.log(friends[0]);
 
-console.log(fruitProcessor(2, 4));
+//fetch last element
+console.log(friends[2]);
+
+//determine length of an array
+console.log(friends.length);
+console.log(friends[friends.length - 1]); //returns last element in an array
+
+//change value of an element in an array
+friends[2] = 'jay';
+console.log(friends);
+
+//arrays can include different types
+const firstName = 'BrianOtieno12';
+const person = [firstName, 20137 - 1991, 'teacher', friends];
+
+console.log(person);
