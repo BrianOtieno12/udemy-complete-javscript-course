@@ -127,33 +127,105 @@
 
 // console.log(fruitProcessor(2, 4));
 
+// /**
+//  * Arrays
+//  */
+
+// //array declaration
+// const friends = ['Michael', 'Steven', 'Peter'];
+// console.log(friends);
+
+// const years = new Array(1991, 1992, 1993, 1994);
+// console.log(years);
+
+// //fetch first element
+// console.log(friends[0]);
+
+// //fetch last element
+// console.log(friends[2]);
+
+// //determine length of an array
+// console.log(friends.length);
+// console.log(friends[friends.length - 1]); //returns last element in an array
+
+// //change value of an element in an array
+// friends[2] = 'jay';
+// console.log(friends);
+
+// //arrays can include different types
+// const firstName = 'BrianOtieno12';
+// const person = [firstName, 20137 - 1991, 'teacher', friends];
+
+// console.log(person);
+
+
+// /**
+//  * Basic array operations
+//  */
+
+// //add elements to the end of an array
+// const friends = ['Michael', 'Steven', 'Peter'];
+// let newLength = friends.push('Jay');//push retunrs new length
+// console.log(friends);
+// console.log(newLength);
+
+// //add elements at the beginning of an array
+// newLength = friends.unshift('John');
+// console.log(friends);
+// console.log(newLength);
+
+// //remove last element in the array
+// let poppedValue = friends.pop();//returns removed value
+// console.log(friends);
+// console.log(poppedValue);
+
+// //remove first elemeent in the array
+// poppedValue = friends.shift(); //returns removed value
+// console.log(friends);
+// console.log(poppedValue);
+
+// //return position of an element in an array
+// console.log(friends.indexOf('Steven'));
+// console.log(friends.indexOf('Bob'));
+
+// //check if a value exists in an array using es6
+// console.log(friends.includes('Steven'));
+// console.log(friends.includes('Bob'));
+
 /**
- * Arrays
+ * Object/
  */
 
-//array declaration
-const friends = ['Michael', 'Steven', 'Peter'];
-console.log(friends);
+const object1 = {
+    firstName: 'Brian',
+    lastName: 'Otieno12',
+    age: 2037 - 1972,
+    job: 'teacher',
+    friends: ['teacher1', 'teacher2', 'teacher3']
+};
 
-const years = new Array(1991, 1992, 1993, 1994);
-console.log(years);
+console.log(object1);
 
-//fetch first element
-console.log(friends[0]);
+//accessing object property values using dot notation
+console.log(object1.firstName);
 
-//fetch last element
-console.log(friends[2]);
+//accessing object property value using bracket notation
+console.log(object1['lastName']);
 
-//determine length of an array
-console.log(friends.length);
-console.log(friends[friends.length - 1]); //returns last element in an array
+//using an expression when accessing a property value
+const nameKey = 'Name';
+console.log(object1['first' + nameKey]);
 
-//change value of an element in an array
-friends[2] = 'jay';
-console.log(friends);
+const intrestedIn = prompt('What do you want to know about Brian ? Choose between firstName, lastName, age, job, and firends');
 
-//arrays can include different types
-const firstName = 'BrianOtieno12';
-const person = [firstName, 20137 - 1991, 'teacher', friends];
+if (object1[intrestedIn]) {
+    console.log(object1[intrestedIn]);
+} else {
+    console.log('Wrong Answer');
+}
 
-console.log(person);
+//adding properties to an object
+object1.location = 'Africa';
+object1['twitter'] = '@brianOtieno12';
+
+console.log(object1);
